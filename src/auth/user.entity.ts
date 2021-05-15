@@ -1,6 +1,6 @@
 import { BaseEntity, Column, Entity, OneToMany, PrimaryGeneratedColumn, Unique } from 'typeorm';
 import * as bcrypt from 'bcrypt';
-import { Task } from 'src/tasks/tasks.entity';
+import { Task } from '../tasks/tasks.entity';
 
 @Entity()
 @Unique(['username'])
